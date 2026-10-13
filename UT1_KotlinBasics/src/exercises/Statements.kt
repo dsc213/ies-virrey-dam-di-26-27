@@ -18,7 +18,7 @@ Example: subtotal of 100, 10% discount, 10% tax.
 - Total (99)
  */
 /**
- EXERCISE TWO
+EXERCISE TWO
 FINAL PROJECT — COMPLETE PROJECT QUOTE CALCULATOR
 
 Write a Kotlin program that generates a complete quote for a software
@@ -201,3 +201,54 @@ Concepts you must use:
  * - Create functions with return values to calculate the different amounts.
  * - Call everything from main.
  */
+
+
+fun main() {
+       val productName = "Kotlin Course"
+       val unitPrice = 99.0
+       val quantity = 2
+       val discount = 0.10f
+       val tax = 0.07f
+
+
+       welcome()
+       productInformation(productName, unitPrice, quantity, discount, tax )
+
+       var total: Double
+       val subtotal = subtotal(unitPrice, quantity)
+       val discountApplied = applyDiscount(subtotal, discount)
+       total = priceAfterDiscount(subtotal, discountApplied)
+       val taxAmm = taxAmount(unitPrice, tax)
+       total = finalPrice(total, taxAmm)
+
+
+
+
+}
+
+fun subtotal(unitPrice:Double, quantity:Int): Double = unitPrice * quantity
+
+fun applyDiscount(subtotal:Double, discount: Float): Double = subtotal * discount
+
+fun priceAfterDiscount(price:Double, discount: Double): Double = price + discount
+
+fun taxAmount (price: Double, tax:Float): Double = price * tax
+
+fun finalPrice (price: Double, tax:Double): Double = price + tax
+
+fun welcome(){
+       println("Welcome to the program!!")
+       println("------------------------")
+}
+fun goodbye(){
+       println("The program has ended, goodbye!!")
+       println("--------------------------------")
+}
+
+fun productInformation(productName:String, unitPrice: Double, quantity: Int, tax:Float, discount:Float){
+       println("Product Name: $productName, UnitPrice: $unitPrice, Quantity: $quantity, Tax: ${tax * 100}% Discount: ${discount * 100}%")
+}
+
+fun summary(subtotal: Double, discountApplied: Double, finalPrice: Double){
+       println("Subtotal: $subtotal, Discount Applied: $discountApplied, FinalPrice: $finalPrice")
+}
