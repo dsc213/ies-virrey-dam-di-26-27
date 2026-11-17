@@ -19,7 +19,13 @@
 - **21/09/2026**: First solution for the exercise Geometric Shapes.
 - **05/10/2026**: Module 1. Kotlin
 - **07/10/2026**: Module 2. Kotlin
-- 
+- **12/10/2026**: Module 3. Functions.
+- **14/10/2026**: Module 3. Lambdas
+- **19/10/2026**: Module 4: Null safety. 
+- **19/10/2026**: Module 4: Collections
+- **26/10/2026**: Module 5: Classes and Objects
+- **27/10/2026**: Module 5: Classes and Objects
+- **04/11/2026**: Ending Module 5
 
 ## 💻 How to open the repository in IntelliJ IDEA
 1. Fork this repository and clone **your fork** (`File → New → Project from Version Control…`).

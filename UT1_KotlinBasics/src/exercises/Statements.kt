@@ -9,7 +9,7 @@ Calculator: Create a calculator that takes the following parameters:
 - Discount (%)
 - Tax (%)
 
-The program must calculate the following values.
+The program must theory.calculate the following values.
 Example: subtotal of 100, 10% discount, 10% tax.
 - Subtotal (100)
 - Discount amount (10)
@@ -39,7 +39,7 @@ The quote must include the following data:
 - Tax percentage.
 - Down payment percentage.
 
-The program must calculate:
+The program must theory.calculate:
 
 1. Total labor cost based on the estimated hours.
 2. Sum of all additional costs.
@@ -174,4 +174,30 @@ Concepts you must use:
 - while
 - break
 - continue
+ */
+/**
+ * EXERCISE SIX
+ * Exercise: Organize a product calculator using functions
+ *
+ * Write a program that calculates the final price of a product.
+ *
+ * Product data:
+ * - Product name: "Kotlin Course"
+ * - Unit price: 99.0
+ * - Quantity: 2
+ * - Discount percentage: 10.0
+ * - Tax percentage: 7.0
+ *
+ * The program must theory.calculate:
+ * - Subtotal
+ * - Discount amount
+ * - Price after discount
+ * - Tax amount
+ * - Final price
+ *
+ * Requirements:
+ * - Create functions without parameters to display the welcome and goodbye messages.
+ * - Create functions with input parameters to display the product information and the final summary.
+ * - Create functions with return values to theory.calculate the different amounts.
+ * - Call everything from theory.main.
  */
